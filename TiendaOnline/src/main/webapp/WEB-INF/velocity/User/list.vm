@@ -1,0 +1,13 @@
+<html>
+<body>
+#if($users.empty)
+	<div>No hay usuarios</div>
+#else
+	<ul>
+	#foreach($user in $users)
+		<li><a href="${user.id}/details.html">$user.firstName $user.lastName</a></li>
+	#end
+	</ul>
+#end
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+	<a href="../list.html">Ver todos</a>
+	<br /><br />
+	<table>
+		<tr>
+			<td><b>Id:</b></td>
+			<td>$category.id<td>
+		</tr>
+		<tr>
+			<td><b>Name:</b></td>
+			<td>$category.name<td>
+		</tr>
+		<tr>
+			<td><b>Parent Name:</b></td>
+			<td><a href="../${parent.id}/details.html">$parent.name</a><td>
+		</tr>
+	</table>
+	<br />
+</body>
+</html>

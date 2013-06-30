@@ -1,0 +1,13 @@
+<html>
+<body>
+#if($categories.empty)
+	<div>No hay Categorias</div>
+#else
+	<ul>
+	#foreach($category in $categories)
+		<li><a href="${category.id}/details.html">$category.name</a></li>
+	#end
+	</ul>
+#end
+</body>
+</html>

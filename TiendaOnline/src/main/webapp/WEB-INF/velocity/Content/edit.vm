@@ -1,0 +1,30 @@
+<html>
+#set($saveUrl = "save.html")
+<form action="#if($content.id)../#end$saveUrl" method="POST">
+	<table>
+		<tr>
+			<td><b>Id:</b></td>
+			<td>$!content.id<input type="hidden" name="id" value="$!content.id" /><td>
+		</tr>
+		<tr>
+			<td><b>Name:</b></td>
+			<td><input type="text" name="name" value="$!content.name"/><td>
+		</tr>
+		<tr>
+			<td><b>Autor:</b></td>
+			<td><input type="text" name="autor" value="$!content.autor"/><td>
+		</tr>
+		<tr>
+			<td><b>Descripcion:</b></td>
+			<td><input type="text" name="description" value="$!content.description"/><td>
+		</tr>
+		<tr>
+			<td><b>Precio:</b></td>
+			<td><input type="text" name="price" value="$!content.price"/><td>
+		</tr>
+	</table>
+  #foreach($error in $status.errorMessages) <b>$error</b> <br> #end
+  <br>
+  <input type="submit" value="Guardar"/>
+</form>
+</html>

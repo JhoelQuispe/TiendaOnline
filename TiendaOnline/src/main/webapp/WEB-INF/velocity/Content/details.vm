@@ -1,0 +1,30 @@
+<html>
+<body>
+	<a href="../list.html">Ver todos</a>
+	<br /><br />
+	<table>
+		<tr>
+			<td><b>Id:</b></td>
+			<td>$content.id<td>
+		</tr>
+		<tr>
+			<td><b>Name:</b></td>
+			<td>$content.name<td>
+		</tr>
+		<tr>
+			<td><b>Autor:</b></td>
+			<td>$content.autor<td>
+		</tr>
+		<tr>
+			<td><b>Descripcion:</b></td>
+			<td>$content.description<td>
+		</tr>
+		<tr>
+			<td><b>Precio:</b></td>
+			<td>$content.price<td>
+		</tr>
+	</table>
+	<br />
+	<a href="edit.html">Modificar</a>
+</body>
+</html>

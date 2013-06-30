@@ -1,0 +1,13 @@
+<html>
+<body>
+#if($contents.empty)
+	<div>No hay Productos</div>
+#else
+	<ul>
+	#foreach($content in $contents)
+		<li><a href="${content.id}/details.html">$content.name</a></li>
+	#end
+	</ul>
+#end
+</body>
+</html>
